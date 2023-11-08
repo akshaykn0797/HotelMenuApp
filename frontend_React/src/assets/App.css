@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Reg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Sbold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Proxima Nova" !important;
+}
+
+.MuiTypography-root {
+  font-family: "Proxima Nova" !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  outline: none;
+}
+
+html ::-webkit-scrollbar {
+  width: 6px !important;
+  scroll-behavior: smooth !important;
+  height: 7px;
+  margin: -1px;
+}
+html ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 3px !important;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: darkgrey !important;
+  border-radius: 3px !important;
+}
+html ::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.slideThese-enter {
+  opacity: 0;
+}
+.slideThese-enter-active {
+  transform: translate3d(0, 0, 0);
+  transition: transform 300ms ease-in;
+}
+.slideThese-exit {
+  transform: translate3d(-150%, 0, 0);
+}
+.slideThese-exit-active {
+  transform: translate3d(-150%, 0, 0);
+  transition: transform 300ms ease-in;
+}
+
+.fade-me-out {
+  transform: translate3d(-50%, 0, 0);
+  transition: 0.3s ease;
+}
+
+.mediaUploadContainer {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(218, 218, 218);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px; */
+}
+.mediaUploadContainer:hover {
+  background-color: rgb(168, 167, 167);
+}
+
+.mediaInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.mediaIcon {
+}
+
+.uploadedImageContainer {
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+.uploadedImageContainer:hover {
+  cursor: pointer;
+}
+.uploadedImageContainer:hover img {
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+  /* background-color: rgba(0, 0, 0, 0.378); */
+}
+
+.uploadedImageContainer:after {
+  content: "Delete Media";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.uploadedImageContainer:hover:after {
+  content: "Delete Media";
+  opacity: 1;
+}
+
+.uploadedImage {
+  height: 100%;
+  width: 100%;
+}

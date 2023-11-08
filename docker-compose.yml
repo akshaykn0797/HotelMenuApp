@@ -1,0 +1,63 @@
+version: '3.9'
+
+services:
+
+  chroma:
+    image: ghcr.io/chroma-core/chroma:0.4.15
+    container_name: chromadb
+    volumes:
+      - index_data:/chroma/.chroma/index
+    ports:
+      - 8000:8000
+    networks:
+      - net
+  # qdrant:
+  #   image: qdrant/qdrant
+  #   # volumes:
+  #   #   - index_data:/chroma/.chroma/index
+  #   ports:
+  #     - 6333:6333
+  #   networks:
+  #     - net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: reactFrontend
+    ports:
+      - '3000:3000'
+
+    volumes:
+      - ./frontend:/app/frontend
+
+    depends_on:
+      - backend
+    networks:
+      - net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: djangoBackend
+    ports:
+      - '8080:8080'
+
+    volumes:
+      - ./backend:/app/backend
+
+    depends_on:
+      - chroma
+    networks:
+      - net
+
+volumes:
+  index_data:
+    driver: local
+  backups:
+    driver: local
+
+networks:
+  net:
+    driver: bridge

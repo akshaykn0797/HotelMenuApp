@@ -1,0 +1,285 @@
+{
+   "hotelName": "degg",
+   "sections": [
+      {
+         "id": "0783BA8E-6C05-4902-9F4F-CA7905295BB7",
+         "category": "Breakfast Specials",
+         "items": [
+            {
+               "id": "3221353D-DFAC-4BD9-8624-D4810A02F285",
+               "name": "Early Riser",
+               "price": "$7.5",
+               "description": "A classic breakfast with eggs, bacon, toast, and hash browns.",
+               "ingredients": [
+                  "Eggs",
+                  "Bacon",
+                  "Toast",
+                  "Hash Browns"
+               ],
+               "calories": 350
+            },
+            {
+               "id": "B6C978D6-4943-4463-8D43-56571EE50284",
+               "name": "D'Local Yocal",
+               "price": "$10",
+               "description": "A hearty breakfast with local farm-fresh eggs, sausage, and pancakes.",
+               "ingredients": [
+                  "Local farm-fresh eggs",
+                  "Sausage",
+                  "Pancakes"
+               ],
+               "calories": 400
+            },
+            {
+               "id": "1CCF7094-D58D-4A09-B15B-AD579603B9F9",
+               "name": "D'feast",
+               "price": "$11.5",
+               "description": "A sumptuous breakfast platter with a variety of options.",
+               "ingredients": [
+                  "Eggs",
+                  "Bacon",
+                  "Sausage",
+                  "Toast",
+                  "Pancakes"
+               ],
+               "calories": 280
+            }
+         ]
+      },
+      {
+         "id": "28293156-D947-464E-8145-EA168681AB9E",
+         "category": "Omelettes",
+         "items": [
+            {
+               "id": "F420C34C-7F10-4487-ADBA-6906E56D7D0B",
+               "name": "Cheese Omelette",
+               "price": "$10.5",
+               "description": "A classic omelette with cheese, tomatoes, and herbs.",
+               "ingredients": [
+                  "Eggs",
+                  "Cheese",
+                  "Tomatoes",
+                  "Herbs"
+               ],
+               "calories": 500
+            },
+            {
+               "id": "719FD3A1-C7C1-4C1F-BF50-D34BBBA3CC1B",
+               "name": "Southwest Omelette",
+               "price": "$12.25",
+               "description": "Spicy omelette with jalapenos, bell peppers, and salsa.",
+               "ingredients": [
+                  "Eggs",
+                  "Jalapenos",
+                  "Bell peppers",
+                  "Salsa"
+               ],
+               "calories": 700
+            },
+            {
+               "id": "5DD6FC3B-06AF-4864-A218-731A44A74D8E",
+               "name": "Greek Omelette",
+               "price": "$16.99",
+               "description": "Omelette with feta cheese, spinach, olives, and onions.",
+               "ingredients": [
+                  "Eggs",
+                  "Feta cheese",
+                  "Spinach",
+                  "Olives",
+                  "Onions"
+               ],
+               "calories": 610
+            }
+         ]
+      },
+      {
+         "id": "1C07AA20-6D43-4E71-8A46-D02AA7924C8F",
+         "category": "A LA CARTE",
+         "items": [
+            {
+               "id": "E13A669C-DC64-4247-B006-1C5AF0DDE494",
+               "name": "Home Fries",
+               "price": "$3.25",
+               "description": "Crispy and seasoned fried potatoes, a perfect side for any breakfast.",
+               "ingredients": [
+                  "Potatoes",
+                  "Oil",
+                  "Seasonings"
+               ],
+               "calories": 100
+            },
+            {
+               "id": "9758F3FF-3E5F-4793-9C50-5E0802B08ACB",
+               "name": "Home Browns",
+               "price": "$3.25",
+               "description": "Crispy fried shredded potatoes, a classic breakfast choice.",
+               "ingredients": [
+                  "Potatoes",
+                  "Oil"
+               ],
+               "calories": 200
+            },
+            {
+               "id": "5E9DA395-D917-461B-BD93-70F77EA74153",
+               "name": "Tater Tots",
+               "price": "$3.25",
+               "description": "Crunchy potato tots, a delicious side to complement your meal.",
+               "ingredients": [
+                  "Potatoes",
+                  "Breading",
+                  "Seasonings"
+               ],
+               "calories": 100
+            }
+         ]
+      },
+      {
+         "id": "28293156-D947-464E-8145-EA168681AB9E",
+         "category": "Beverages",
+         "items": [
+            {
+               "id": "F420C34C-7F10-4487-ADBA-6906E56D7D0B",
+               "name": "Iced Tea",
+               "price": "$3",
+               "description": "Refreshing iced tea, perfect to complement any meal.",
+               "ingredients": [
+                  "Tea",
+                  "Ice",
+                  "Sugar"
+               ],
+               "calories": 50
+            },
+            {
+               "id": "719FD3A1-C7C1-4C1F-BF50-D34BBBA3CC1B",
+               "name": "Hot Chocolate",
+               "price": "$3",
+               "description": "Warm and comforting chocolate beverage.",
+               "ingredients": [
+                  "Chocolate",
+                  "Milk",
+                  "Sugar"
+               ],
+               "calories": 150
+            },
+            {
+               "id": "5DD6FC3B-06AF-4864-A218-731A44A74D8E",
+               "name": "Coffee",
+               "price": "$3",
+               "description": "Classic coffee brewed fresh to awaken your senses.",
+               "ingredients": [
+                  "Coffee beans",
+                  "Water"
+               ],
+               "calories": 5
+            }
+         ]
+      },
+      {
+         "id": "1C07AA20-6D43-4E71-8A46-D02AA7924C8F",
+         "category": "Hot Sandwiches",
+         "items": [
+            {
+               "id": "E13A669C-DC64-4247-B006-1C5AF0DDE494",
+               "name": "Grilled Cheese",
+               "price": "$8.50",
+               "description": "Classic grilled cheese sandwich with melted cheese.",
+               "ingredients": [
+                  "Bread",
+                  "Cheese",
+                  "Butter"
+               ],
+               "calories": 350
+            },
+            {
+               "id": "9758F3FF-3E5F-4793-9C50-5E0802B08ACB",
+               "name": "Bacon Chicken Cheddar Melt",
+               "price": "$14.25",
+               "description": "A savory sandwich loaded with bacon, chicken, and melted cheddar.",
+               "ingredients": [
+                  "Bread",
+                  "Bacon",
+                  "Chicken",
+                  "Cheddar"
+               ],
+               "calories": 800
+            }
+         ]
+      },
+      {
+         "id": "28293156-D947-464E-8145-EA168681AB9E",
+         "category": "Cold Sandwiches",
+         "items": [
+            {
+               "id": "F420C34C-7F10-4487-ADBA-6906E56D7D0B",
+               "name": "D'BLT",
+               "price": "$13.5",
+               "description": "Classic sandwich loaded with bacon, lettuce, and tomatoes.",
+               "ingredients": [
+                  "Bread",
+                  "Bacon",
+                  "Lettuce",
+                  "Tomatoes"
+               ],
+               "calories": 600
+            },
+            {
+               "id": "719FD3A1-C7C1-4C1F-BF50-D34BBBA3CC1B",
+               "name": "CLUB",
+               "price": "$16",
+               "description": "A triple-decker sandwich filled with ham, turkey, bacon, lettuce, and tomatoes.",
+               "ingredients": [
+                  "Bread",
+                  "Ham",
+                  "Turkey",
+                  "Bacon",
+                  "Lettuce",
+                  "Tomatoes"
+               ],
+               "calories": 0
+            }
+         ]
+      },
+      {
+         "id": "1C07AA20-6D43-4E71-8A46-D02AA7924C8F",
+         "category": "Wraps",
+         "items": [
+            {
+               "id": "E13A669C-DC64-4247-B006-1C5AF0DDE494",
+               "name": "D'HOUSE WRAP",
+               "price": "$12.5",
+               "description": "A flavorful wrap filled with assorted ingredients.",
+               "ingredients": [
+                  "Tortilla",
+                  "Assorted fillings"
+               ],
+               "calories": 350
+            },
+            {
+               "id": "9758F3FF-3E5F-4793-9C50-5E0802B08ACB",
+               "name": "Chicken CAESAR",
+               "price": "$13",
+               "description": "A wrap filled with chicken, lettuce, and Caesar dressing.",
+               "ingredients": [
+                  "Tortilla",
+                  "Chicken",
+                  "Lettuce",
+                  "Caesar dressing"
+               ],
+               "calories": 800
+            },
+            {
+               "id": "5E9DA395-D917-461B-BD93-70F77EA74153",
+               "name": "Turkey Avocado",
+               "price": "$16",
+               "description": "A healthy and delicious wrap with turkey and avocado.",
+               "ingredients": [
+                  "Tortilla",
+                  "Turkey",
+                  "Avocado"
+               ],
+               "calories": 150
+            }
+         ]
+      }
+   ]
+}

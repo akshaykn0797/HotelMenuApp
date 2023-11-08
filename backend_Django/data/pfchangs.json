@@ -1,0 +1,258 @@
+{
+  "hotelName": "pfchangs",
+  "sections": [
+    {
+      "id": "1D77293E-F6E8-4324-8F02-18049F75F837",
+      "category": "Appetizers",
+      "items": [
+        {
+          "id": "1D4C543F-AAD6-4740-BF51-F1FAE5F71A90",
+          "name": "Northern-style pork spare ribs",
+          "price": "$20",
+          "description": "Tender and flavorful pork spare ribs cooked in a Northern-style marinade.",
+          "ingredients": [
+            "Pork Ribs",
+            "Northern-style marinade",
+            "Spices"
+          ],
+          "calories": 350
+        },
+        {
+          "id": "12F7DD1F-BBE2-40F5-8E09-6D27AE0E0213",
+          "name": "BBQ pork spare ribs",
+          "price": "$15",
+          "description": "Slow-cooked pork spare ribs glazed with a tangy BBQ sauce.",
+          "ingredients": [
+            "Pork Ribs",
+            "BBQ sauce",
+            "Seasonings"
+          ],
+          "calories": 420
+        },
+        {
+          "id": "53E8D26D-4EF4-4B04-A76D-7C853FE7553B",
+          "name": "Chang's lettuce wraps",
+          "price": "$13",
+          "description": "Lettuce cups filled with a mix of savory ingredients, perfect for a light yet satisfying appetizer.",
+          "ingredients": [
+            "Lettuce",
+            "Minced chicken",
+            "Water chestnuts",
+            "Sauce"
+          ],
+          "calories": 280
+        }
+      ]
+    },
+    {
+      "id": "7FEC5718-3C39-4D48-80F0-1D0C5DFD9D62",
+      "category": "Entrees",
+      "items": [
+        {
+          "id": "A7DE7ED5-7A3B-42E4-89BB-891FF3ED1631",
+          "name": "Wagyu steak",
+          "price": "$12.99",
+          "description": "Tender Wagyu steak, cooked to perfection, served with a side of vegetables.",
+          "ingredients": [
+            "Wagyu beef",
+            "Seasonings",
+            "Vegetables"
+          ],
+          "calories": 600
+        },
+        {
+          "id": "D67A5CBB-316A-4F8B-BB47-F7A4FA43D01A",
+          "name": "Fire braised short ribs",
+          "price": "$14.99",
+          "description": "Braised short ribs in a fiery, bold sauce, bursting with rich flavors.",
+          "ingredients": [
+            "Short ribs",
+            "Spicy braising sauce",
+            "Herbs"
+          ],
+          "calories": 700
+        },
+        {
+          "id": "1C1A9CF7-8E3A-4E69-BB94-54D00E2929E1",
+          "name": "Chang's spicy chicken",
+          "price": "$16.99",
+          "description": "Crispy chicken tossed in a spicy sauce, served with steamed rice.",
+          "ingredients": [
+            "Chicken",
+            "Spicy sauce",
+            "Rice"
+          ],
+          "calories": 600
+        }
+      ]
+    },
+    {
+      "id": "3C1537E8-5DF8-443B-A3CB-4E92E475F75C",
+      "category": "Dim Sum",
+      "items": [
+        {
+          "id": "671ABF25-1D9E-4B26-BB0B-DEAB5715ECC1",
+          "name": "Hand-folded crab wontons",
+          "price": "$10",
+          "description": "Delicately folded wontons filled with a mix of crab and savory seasonings.",
+          "ingredients": [
+            "Crab meat",
+            "Wonton wrappers",
+            "Seasonings"
+          ],
+          "calories": 300
+        },
+        {
+          "id": "3A70BC65-78C6-4FA2-8ACB-9D42A133A5A1",
+          "name": "Handmade dumplings",
+          "price": "$10",
+          "description": "Freshly made dumplings stuffed with a delicious filling.",
+          "ingredients": [
+            "Dumpling dough",
+            "Filling",
+            "Spices"
+          ],
+          "calories": 200
+        },
+        {
+          "id": "3B0532C9-1E0A-4B2C-9A2E-BED2FCA872FD",
+          "name": "Vegetable Spring Rolls",
+          "price": "$7",
+          "description": "Crispy spring rolls filled with assorted vegetables.",
+          "ingredients": [
+            "Spring roll pastry",
+            "Vegetables",
+            "Sauce"
+          ],
+          "calories": 100
+        }
+      ]
+    },
+    {
+      "id": "F8E7213D-5A5E-47A2-A4C8-AB4AFC1025A5",
+      "category": "Desserts",
+      "items": [
+        {
+          "id": "E695C94B-0174-496F-95F0-848A101D31BF",
+          "name": "Chang's Apple Crunch",
+          "price": "$5.99",
+          "description": "Baked apple dessert with a crunchy, sweet topping.",
+          "ingredients": [
+            "Apples",
+            "Crunchy topping",
+            "Sugar"
+          ],
+          "calories": 500
+        },
+        {
+          "id": "4A7E6E4D-FAC2-4376-AD9A-CB839E867D39",
+          "name": "The Great Wall of Chocolate",
+          "price": "$10",
+          "description": "Decadent chocolate cake layers filled with rich, chocolatey goodness.",
+          "ingredients": [
+            "Chocolate cake layers",
+            "Chocolate filling",
+            "Cocoa"
+          ],
+          "calories": 400
+        },
+        {
+          "id": "1E9BC5EF-11D8-4ED1-8264-AC272A23552A",
+          "name": "Chocolate Souffle",
+          "price": "$6.99",
+          "description": "A classic souffle with a rich chocolate flavor and a soft, airy texture.",
+          "ingredients": [
+            "Chocolate",
+            "Eggs",
+            "Sugar"
+          ],
+          "calories": 450
+        }
+      ]
+    },
+    {
+      "id": "03C2FED7-FC08-4CBB-A51F-2A3153AB4F49",
+      "category": "Beverages",
+      "items": [
+        {
+          "id": "5717A15C-CB26-4B86-BA63-79DCABE3FDC3",
+          "name": "Asian Pear Mojito",
+          "price": "$20",
+          "description": "A refreshing beverage with the flavors of Asian pear and a hint of mint.",
+          "ingredients": [
+            "Asian pear juice",
+            "Mint leaves",
+            "Soda water"
+          ],
+          "calories": 15
+        },
+        {
+          "id": "91B39150-0DA7-4996-9F51-FD6EB58D6F5C",
+          "name": "Organic Agave Margarita",
+          "price": "$17",
+          "description": "A margarita made with organic agave syrup, offering a smooth and tangy taste.",
+          "ingredients": [
+            "Tequila",
+            "Agave syrup",
+            "Lime juice"
+          ],
+          "calories": 150
+        },
+        {
+          "id": "01A495BB-5DA8-4F67-AB17-16C22445BB57",
+          "name": "Midnight Ritual",
+          "price": "$19",
+          "description": "A unique, low-calorie beverage perfect for an evening wind-down.",
+          "ingredients": [
+            "Special herbs",
+            "Infused water",
+            "Ice"
+          ],
+          "calories": 5
+        }
+      ]
+    },
+    {
+      "id": "68D6489C-F0A0-4136-8638-15ED6A8D21B8",
+      "category": "Sushi Menu",
+      "items": [
+        {
+          "id": "5E1E61C1-5E0F-4C08-9C20-8D5586DDC8F3",
+          "name": "Kung Pao Dragon Roll",
+          "price": "$7",
+          "description": "A flavorful sushi roll with a mix of ingredients and a touch of Kung Pao spice.",
+          "ingredients": [
+            "Sushi rice",
+            "Shrimp tempura",
+            "Kung Pao sauce"
+          ],
+          "calories": 350
+        },
+        {
+          "id": "1E3C0D36-3D79-4E53-89A2-E6C748B4F4D8",
+          "name": "Dynamite Roll",
+          "price": "$5.99",
+          "description": "An explosively flavorful sushi roll that packs a punch.",
+          "ingredients": [
+            "Sushi rice",
+            "Spicy tuna",
+            "Tempura flakes"
+          ],
+          "calories": 800
+        },
+        {
+          "id": "AAEC3F58-98FC-4A86-853A-94C98B245A9A",
+          "name": "Shrimp Tempura Roll",
+          "price": "$8",
+          "description": "A crispy and delightful sushi roll filled with tempura shrimp.",
+          "ingredients": [
+            "Sushi rice",
+            "Shrimp tempura",
+            "Nori seaweed"
+          ],
+          "calories": 150
+        }
+      ]
+    }
+  ]
+}

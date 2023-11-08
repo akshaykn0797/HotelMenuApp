@@ -1,0 +1,224 @@
+{
+  "hotelName": "sushima",
+  "sections": [
+    {
+      "id": "88D1B4E5-FE09-4B40-8B3E-7F8D9FCD8CFD",
+      "category": "Appetizers",
+      "items": [
+        {
+          "id": "22B0F7F7-5B6B-405C-92A5-EB59D400DA6E",
+          "name": "Calamari",
+          "price": "$5.75",
+          "description": "Crispy fried calamari served with a zesty dipping sauce.",
+          "ingredients": [
+            "Calamari",
+            "Batter",
+            "Zesty dipping sauce"
+          ],
+          "calories": 350
+        },
+        {
+          "id": "E7FDFEC1-81C9-4FAD-8FF0-96B0978E2B4B",
+          "name": "Chicken Yakitori",
+          "price": "$5.75",
+          "description": "Grilled chicken skewers brushed with a savory Yakitori sauce.",
+          "ingredients": [
+            "Chicken pieces",
+            "Skewers",
+            "Yakitori sauce"
+          ],
+          "calories": 420
+        },
+        {
+          "id": "EB9B477C-12D5-4A41-9DD8-AB1F4ED514CF",
+          "name": "Edamame",
+          "price": "$4.75",
+          "description": "Steamed soybeans seasoned with sea salt.",
+          "ingredients": [
+            "Edamame",
+            "Sea salt"
+          ],
+          "calories": 280
+        }
+      ]
+    },
+    {
+      "id": "87D4CE9A-64A6-4685-8B85-5D2911C21437",
+      "category": "Entrees",
+      "items": [
+        {
+          "id": "EA0A4F18-9DA3-497D-9B32-5E5ED7B2CAB1",
+          "name": "Chicken teriyaki",
+          "price": "$13.95",
+          "description": "Grilled chicken marinated in a flavorful teriyaki sauce.",
+          "ingredients": [
+            "Chicken breast",
+            "Teriyaki sauce"
+          ],
+          "calories": 900
+        },
+        {
+          "id": "17D6D58A-FBF4-4EF0-9E6E-47D33D3D5B8C",
+          "name": "New York Strip Steak",
+          "price": "$17.95",
+          "description": "Juicy and tender New York Strip Steak cooked to your liking.",
+          "ingredients": [
+            "New York Strip Steak",
+            "Seasoning"
+          ],
+          "calories": 710
+        },
+        {
+          "id": "6B9B2F13-9A8F-4786-B7AC-3A529623F9E0",
+          "name": "Salmon Teriyaki",
+          "price": "$17.50",
+          "description": "Grilled salmon fillet glazed with a delectable teriyaki sauce.",
+          "ingredients": [
+            "Salmon fillet",
+            "Teriyaki sauce"
+          ],
+          "calories": 620
+        }
+      ]
+    },
+    {
+      "id": "BDFF8D60-498C-4F0C-8CF9-1077278CBB86",
+      "category": "Side Order",
+      "items": [
+        {
+          "id": "1AD28AE1-8094-4995-A647-96E97FAE5ED9",
+          "name": "Extra Honey Spicy Sauce",
+          "price": "$0.30",
+          "description": "Additional portion of the restaurant's signature Honey Spicy Sauce.",
+          "ingredients": [
+            "Honey",
+            "Spices"
+          ],
+          "calories": 30
+        },
+        {
+          "id": "3C1CFF5E-9F53-484B-8A09-C06757F389B8",
+          "name": "Extra Spicy Mayo Sauce",
+          "price": "$0.30",
+          "description": "Extra serving of the spicy mayo sauce.",
+          "ingredients": [
+            "Mayonnaise",
+            "Spices"
+          ],
+          "calories": 20
+        },
+        {
+          "id": "3A4F87AF-51F1-4427-8B95-32B26DD08C38",
+          "name": "Extra Eel Sauce",
+          "price": "$0.30",
+          "description": "Additional serving of the restaurant's Eel Sauce.",
+          "ingredients": [
+            "Eel sauce"
+          ],
+          "calories": 10
+        }
+      ]
+    },
+    {
+      "id": "F83A2D3E-31AB-4C71-9D03-6AE7B52D1B68",
+      "category": "Desserts",
+      "items": [
+        {
+          "id": "35E8A097-70BC-46F4-A745-9A5A5688CCD8",
+          "name": "Fried Banana Tempura",
+          "price": "$4.50",
+          "description": "Sweet and crispy fried banana bites served with a drizzle of honey.",
+          "ingredients": [
+            "Bananas",
+            "Tempura batter",
+            "Honey"
+          ],
+          "calories": 500
+        },
+        {
+          "id": "D390F154-070D-491A-BA84-60D8C21A5C47",
+          "name": "Fried Cheese Cake",
+          "price": "$4.95",
+          "description": "Creamy cheesecake wrapped in a crispy, sweet coating.",
+          "ingredients": [
+            "Cheesecake",
+            "Breading",
+            "Sugar"
+          ],
+          "calories": 400
+        }
+      ]
+    },
+    {
+      "id": "A9E517EF-24FC-49B0-871E-6E50E8E93735",
+      "category": "Beverages",
+      "items": [
+        {
+          "id": "A3016932-2D9A-48C1-9E5D-0E741A736085",
+          "name": "Iced Tea",
+          "price": "$1.95",
+          "description": "Refreshing iced tea served with a slice of lemon.",
+          "ingredients": [
+            "Tea",
+            "Ice",
+            "Lemon"
+          ],
+          "calories": 25
+        },
+        {
+          "id": "2BFE7C31-2C69-48B4-BA22-CC50D57F8041",
+          "name": "Sweet Tea",
+          "price": "$1.95",
+          "description": "Classic sweet tea infused with a hint of sugar.",
+          "ingredients": [
+            "Tea",
+            "Sugar",
+            "Ice"
+          ],
+          "calories": 10
+        },
+        {
+          "id": "C3370A4A-8D52-4A51-84F7-C2BC56F84756",
+          "name": "Coke (Can)",
+          "price": "$1.50",
+          "description": "Classic canned Coca-Cola served chilled.",
+          "ingredients": [
+            "Coca-Cola"
+          ],
+          "calories": 50
+        }
+      ]
+    },
+    {
+      "id": "B5A42A44-3F37-42F5-93D1-8C656FD34C60",
+      "category": "Sushi Rolls Or Sushi Hand Rolls",
+      "items": [
+        {
+          "id": "1A6A4322-4EEB-4717-832D-0A6EFA173E7B",
+          "name": "Eel Cucumber Roll",
+          "price": "$5.25",
+          "description": "Sushi roll made with fresh eel and crisp cucumber.",
+          "ingredients": [
+            "Fresh eel",
+            "Cucumber",
+            "Sushi rice"
+          ],
+          "calories": 100
+        },
+        {
+          "id": "2B26ADFD-8946-4370-844D-23F591AD5F38",
+          "name": "Philly Roll",
+          "price": "$4.95",
+          "description": "Sushi roll with smoked salmon, cream cheese, and cucumber.",
+          "ingredients": [
+            "Smoked salmon",
+            "Cream cheese",
+            "Cucumber",
+            "Sushi rice"
+          ],
+          "calories": 180
+        }
+      ]
+    }
+  ]
+}

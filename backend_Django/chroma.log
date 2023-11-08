@@ -1,0 +1,1394 @@
+[32mINFO[0m:     [03-11-2023 21:18:20] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component System
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2023 21:18:20] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2023 21:18:20] Started server process [[36m29970[0m]
+[32mINFO[0m:     [03-11-2023 21:18:20] Waiting for application startup.
+[32mINFO[0m:     [03-11-2023 21:18:20] Application startup complete.
+[31mERROR[0m:    [03-11-2023 21:18:20] [Errno 48] error while attempting to bind on address ('127.0.0.1', 8000): address already in use
+[32mINFO[0m:     [03-11-2023 21:18:20] Waiting for application shutdown.
+[32mINFO[0m:     [03-11-2023 21:18:20] Application shutdown complete.
+[32mINFO[0m:     [03-11-2023 21:20:23] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component System
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component SqliteDB
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component Posthog
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-11-2023 21:20:23] Starting component SegmentAPI
+[32mINFO[0m:     [03-11-2023 21:20:23] Started server process [[36m30084[0m]
+[32mINFO[0m:     [03-11-2023 21:20:23] Waiting for application startup.
+[32mINFO[0m:     [03-11-2023 21:20:23] Application startup complete.
+[32mINFO[0m:     [03-11-2023 21:20:23] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-11-2023 13:54:12] ::1:54383 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:54:12] ::1:54383 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:54:12] ::1:54383 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:55:47] ::1:54397 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:55:47] ::1:54397 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:55:47] ::1:54397 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:56:45] ::1:54416 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:56:45] ::1:54416 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:56:45] ::1:54416 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:56:45] ::1:54416 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 13:58:18] Collection my_collection already exists
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 295, in create_collection
+    return self._api.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 157, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/db/mixins/sysdb.py", line 225, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection my_collection already exists
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 13:58:18] Collection my_collection already exists
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 295, in create_collection
+    return self._api.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 157, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/db/mixins/sysdb.py", line 225, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection my_collection already exists
+[32mINFO[0m:     [04-11-2023 13:58:18] ::1:54433 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 13:59:05] ::1:54452 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:59:05] ::1:54452 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:59:05] ::1:54452 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:59:05] ::1:54452 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 13:59:05] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 13:59:05] ::1:54452 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 13:59:05] ::1:54452 - "GET /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:12:45] ::1:54553 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:12:45] ::1:54553 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:12:45] ::1:54553 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:12:45] ::1:54553 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:12:45] ::1:54553 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:12:45] ::1:54553 - "GET /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:05] ::1:54565 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:05] ::1:54565 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:05] ::1:54565 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:05] ::1:54565 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:05] ::1:54565 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:05] ::1:54565 - "GET /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:13:25] ::1:54574 - "POST /api/uploadToChroma HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 14:14:22] ::1:54582 - "POST /api/uploadToChroma HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54599 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54599 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54599 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54599 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54599 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54599 - "GET /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:38] ::1:54602 - "POST /api/uploadToChroma HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 14:15:39] ::1:54602 - "POST /api/uploadToChroma HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 14:15:52] ::1:54608 - "POST /api/uploadToChroma HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 14:15:53] ::1:54608 - "POST /api/uploadToChroma HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 14:15:54] ::1:54614 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:54] ::1:54614 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:54] ::1:54614 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:54] ::1:54614 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:54] ::1:54614 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:15:54] ::1:54614 - "GET /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:14] ::1:54625 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:14] ::1:54625 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:14] ::1:54625 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:14] ::1:54625 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:14] ::1:54625 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:14] ::1:54625 - "GET /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:30] ::1:54632 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:31] ::1:54632 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:16:31] ::1:54632 - "POST /api/v1/collections/66383e2f-b77f-4ce0-bdc8-f1cb672e24e9/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 14:19:59] ::1:54666 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:19:59] ::1:54666 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:19:59] ::1:54666 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:26:35] ::1:54718 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:26:35] ::1:54718 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:26:35] ::1:54718 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:29:52] ::1:54747 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:29:52] ::1:54747 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:29:52] ::1:54747 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:33:47] ::1:54771 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:33:47] ::1:54771 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:33:47] ::1:54771 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:44:34] ::1:54794 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:44:34] ::1:54794 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:44:34] ::1:54794 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 14:44:35] Collection udupi does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 310, in get_collection
+    return self._api.get_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 235, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection udupi does not exist.
+[32mINFO[0m:     [04-11-2023 14:44:35] ::1:54794 - "GET /api/v1/collections/udupi?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 14:45:24] ::1:54811 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:45:24] ::1:54811 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:45:24] ::1:54811 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 14:45:27] Collection udupi does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 310, in get_collection
+    return self._api.get_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 235, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection udupi does not exist.
+[32mINFO[0m:     [04-11-2023 14:45:27] ::1:54811 - "GET /api/v1/collections/udupi?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[31mERROR[0m:    [04-11-2023 14:50:18] Collection Udupi already exists
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 295, in create_collection
+    return self._api.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 157, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/db/mixins/sysdb.py", line 225, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection Udupi already exists
+[32mINFO[0m:     [04-11-2023 14:50:18] ::1:54846 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 14:50:41] ::1:54850 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 14:50:41] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 14:50:41] ::1:54850 - "POST /api/v1/collections/5261302f-bf66-4da9-9e4f-532e8d1fa0d3/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:50:41] ::1:54850 - "GET /api/v1/collections/5261302f-bf66-4da9-9e4f-532e8d1fa0d3/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:35] ::1:54902 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:35] ::1:54902 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:35] ::1:54902 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:35] ::1:54902 - "DELETE /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:56] ::1:54916 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:56] ::1:54916 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:55:56] ::1:54916 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 14:56:00] Collection Udupi does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 331, in delete_collection
+    return self._api.delete_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 302, in delete_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection Udupi does not exist.
+[32mINFO[0m:     [04-11-2023 14:56:00] ::1:54916 - "DELETE /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 14:56:21] ::1:54926 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:56:22] ::1:54926 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 14:56:22] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 14:56:22] ::1:54926 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 14:56:42] ::1:54939 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:56:42] ::1:54939 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:56:42] ::1:54939 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:56:53] ::1:54944 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:56:53] ::1:54944 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 14:56:53] ::1:54944 - "GET /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:34:26] ::1:55187 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:34:26] ::1:55187 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:34:26] ::1:55187 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:34:37] ::1:55195 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:34:37] ::1:55195 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:34:37] ::1:55195 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:35:02] ::1:55217 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:35:02] ::1:55217 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:35:02] ::1:55217 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 15:35:23] Collection degg does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 310, in get_collection
+    return self._api.get_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 235, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection degg does not exist.
+[32mINFO[0m:     [04-11-2023 15:35:23] ::1:55224 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 15:35:38] ::1:55226 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 15:35:55] ::1:55229 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/query HTTP/1.1" 400
+[32mINFO[0m:     [04-11-2023 18:13:59] ::1:56265 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:13:59] ::1:56265 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:13:59] ::1:56265 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:21] ::1:56284 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:21] ::1:56284 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:21] ::1:56284 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:22] ::1:56284 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:15:22] Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [04-11-2023 18:15:22] ::1:56284 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:22] ::1:56284 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:22] ::1:56284 - "GET /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:48] ::1:56299 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:48] ::1:56299 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:48] ::1:56299 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:15:50] ::1:56299 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:15:50] Number of requested results 5 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [04-11-2023 18:15:50] ::1:56299 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:16:50] ::1:56317 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:16:50] ::1:56317 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:16:50] ::1:56317 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:16:54] ::1:56317 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:16:54] ::1:56317 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:17:44] ::1:56337 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:17:44] ::1:56337 - "POST /api/v1/collections/9b3fe789-3b23-414d-b706-852efb2defb1/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:30:41] ::1:56443 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:30:41] ::1:56443 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:30:41] ::1:56443 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:30:45] ::1:56443 - "DELETE /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:32:12] ::1:56466 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:32:12] ::1:56466 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:32:12] ::1:56466 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:15] ::1:56482 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:15] ::1:56482 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:15] ::1:56482 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:20] ::1:56490 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:21] ::1:56490 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 18:34:21] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 18:34:21] ::1:56490 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 18:34:35] ::1:56500 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:35] ::1:56500 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:35] ::1:56500 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:46] ::1:56510 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:46] ::1:56510 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:46] ::1:56510 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:47] ::1:56510 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:47] ::1:56510 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:34:47] ::1:56510 - "GET /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:27] ::1:56530 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:27] ::1:56530 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:27] ::1:56530 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:29] ::1:56530 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:29] ::1:56530 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:29] ::1:56530 - "GET /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:36:29] ::1:56530 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:36:29] Number of requested results 4 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [04-11-2023 18:36:29] ::1:56530 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:09] ::1:56563 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:09] ::1:56563 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:09] ::1:56563 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:18] ::1:56568 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:18] ::1:56568 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:18] ::1:56568 - "GET /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:39:18] ::1:56568 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:39:18] Number of requested results 20 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [04-11-2023 18:39:18] ::1:56568 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/query HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 18:41:06] Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got d'egg
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 295, in create_collection
+    return self._api.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 153, in create_collection
+    check_index_name(name)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 73, in check_index_name
+    raise ValueError(msg)
+ValueError: Expected collection name that (1) contains 3-63 characters, (2) starts and ends with an alphanumeric character, (3) otherwise contains only alphanumeric characters, underscores or hyphens (-), (4) contains no two consecutive periods (..) and (5) is not a valid IPv4 address, got d'egg
+[32mINFO[0m:     [04-11-2023 18:41:06] ::1:56586 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 18:41:37] ::1:56593 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:41:38] ::1:56593 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 18:41:38] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 18:41:38] ::1:56593 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 18:42:02] ::1:56603 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:42:02] ::1:56603 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:42:02] ::1:56603 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:42:46] ::1:56632 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:42:46] ::1:56632 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:42:46] ::1:56632 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:42:46] ::1:56632 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:42:46] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 18:42:46] ::1:56632 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:43:51] ::1:56643 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:43:51] ::1:56643 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:43:51] ::1:56643 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:39] ::1:56727 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:39] ::1:56727 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:39] ::1:56727 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:44] ::1:56727 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:44] ::1:56727 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:44] ::1:56727 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:51:44] ::1:56727 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:51:44] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 18:51:44] ::1:56727 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:57:07] ::1:56775 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:57:07] ::1:56775 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 18:57:07] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 18:57:07] ::1:56775 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 18:57:27] ::1:56782 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:57:27] ::1:56782 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:57:27] ::1:56782 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 18:57:27] ::1:56782 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 18:57:27] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [04-11-2023 18:57:27] ::1:56782 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 19:48:31] ::1:56978 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 19:48:32] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 19:48:32] ::1:56978 - "POST /api/v1/collections/ae6fcf00-8b90-4483-8cd6-fd99ba974dd3/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 19:48:42] ::1:56987 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [04-11-2023 19:48:43] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-11-2023 19:48:43] ::1:56987 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/add HTTP/1.1" 201
+[32mINFO[0m:     [04-11-2023 19:48:47] Backing off send_request(...) for 0.5s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='app.posthog.com', port=443): Read timed out. (read timeout=15))
+[32mINFO[0m:     [04-11-2023 19:48:47] ::1:56991 - "POST /api/getMenu HTTP/1.1" 404
+[32mINFO[0m:     [04-11-2023 21:53:08] ::1:58064 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:53:08] ::1:58064 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:53:08] ::1:58064 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:54:44] ::1:58097 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:54:44] ::1:58097 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:54:44] ::1:58097 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:56:47] ::1:58123 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:56:47] ::1:58123 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:56:47] ::1:58123 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:58:20] ::1:58147 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:58:20] ::1:58147 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 21:58:20] ::1:58147 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:38] ::1:58182 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:38] ::1:58182 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:38] ::1:58182 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:47] ::1:58189 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:47] ::1:58189 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:47] ::1:58189 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:01:47] ::1:58189 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 22:01:47] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [04-11-2023 22:01:47] ::1:58189 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:03:34] ::1:58208 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:03:34] ::1:58208 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:03:34] ::1:58208 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:37:29] ::1:58551 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:37:29] ::1:58551 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:37:29] ::1:58551 - "GET /api/v1 HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 22:50:23] Collection udupi does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 310, in get_collection
+    return self._api.get_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 235, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection udupi does not exist.
+[32mINFO[0m:     [04-11-2023 22:50:23] ::1:59009 - "GET /api/v1/collections/udupi?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 22:50:44] ::1:59023 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:50:44] ::1:59023 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:50:44] ::1:59023 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:50:44] ::1:59023 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 22:50:44] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 22:50:44] ::1:59023 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:51:48] ::1:59078 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:51:48] ::1:59078 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:51:48] ::1:59078 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:51:48] ::1:59078 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 22:51:48] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 22:51:48] ::1:59078 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:55:25] ::1:59977 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:55:25] ::1:59977 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:55:25] ::1:59977 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 22:55:25] ::1:59977 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 22:55:26] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 22:55:26] ::1:59977 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[31mERROR[0m:    [04-11-2023 23:00:57] Collection Udupi already exists
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 295, in create_collection
+    return self._api.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 157, in create_collection
+    coll, created = self._sysdb.create_collection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/db/mixins/sysdb.py", line 225, in create_collection
+    raise UniqueConstraintError(f"Collection {name} already exists")
+chromadb.db.base.UniqueConstraintError: Collection Udupi already exists
+[32mINFO[0m:     [04-11-2023 23:00:57] ::1:61364 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [04-11-2023 23:03:37] ::1:62088 - "GET /api/v1/collections/Udupi?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:03:37] ::1:62088 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:03:37] ::1:62088 - "GET /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:03:37] ::1:62088 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 23:03:37] Number of requested results 20 is greater than number of elements in index 3, updating n_results = 3
+[32mINFO[0m:     [04-11-2023 23:03:37] ::1:62088 - "POST /api/v1/collections/ee28e961-a908-4507-ac67-f24385b85f2e/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:12:48] ::1:64065 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:12:48] ::1:64065 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:12:48] ::1:64065 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:12:48] ::1:64065 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 23:12:49] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 23:12:49] ::1:64065 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:18:25] ::1:65450 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:18:25] ::1:65450 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:18:25] ::1:65450 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:18:25] ::1:65450 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 23:18:25] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 23:18:25] ::1:65450 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:19:47] ::1:65483 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:19:47] ::1:65483 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:19:47] ::1:65483 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [04-11-2023 23:19:47] ::1:65483 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [04-11-2023 23:19:47] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [04-11-2023 23:19:47] ::1:65483 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:04:31] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component System
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component SqliteDB
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component Posthog
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [05-11-2023 01:04:31] Starting component SegmentAPI
+[32mINFO[0m:     [05-11-2023 01:04:31] Started server process [[36m2041[0m]
+[32mINFO[0m:     [05-11-2023 01:04:31] Waiting for application startup.
+[32mINFO[0m:     [05-11-2023 01:04:31] Application startup complete.
+[32mINFO[0m:     [05-11-2023 01:04:31] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [05-11-2023 01:04:47] ::1:49551 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:04:47] ::1:49551 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:04:47] ::1:49551 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:07:01] ::1:49587 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [05-11-2023 01:07:01] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [05-11-2023 01:07:01] ::1:49587 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:07:01] ::1:49587 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:07:01] ::1:49587 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 01:07:02] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [05-11-2023 01:07:02] ::1:49587 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:34:34] ::1:51341 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [05-11-2023 01:34:34] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [05-11-2023 01:34:34] ::1:51341 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:34:34] ::1:51341 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:34:34] ::1:51341 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 01:34:34] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 01:34:34] ::1:51341 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:37:28] ::1:51382 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:37:28] ::1:51382 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:37:28] ::1:51382 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:37:28] ::1:51382 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 01:37:29] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 01:37:29] ::1:51382 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:51:46] ::1:51528 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:51:46] ::1:51528 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:51:46] ::1:51528 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:51:46] ::1:51528 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 01:51:47] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 01:51:47] ::1:51528 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:52:55] ::1:51533 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:52:55] ::1:51533 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:52:56] ::1:51533 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 01:52:56] ::1:51533 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 01:52:56] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 01:52:56] ::1:51533 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:44:57] ::1:60035 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [05-11-2023 15:44:57] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [05-11-2023 15:44:57] ::1:60035 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:44:57] ::1:60035 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:44:57] ::1:60035 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:44:57] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:44:57] ::1:60035 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:44:57] Backing off send_request(...) for 0.6s (requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+[32mINFO[0m:     [05-11-2023 15:45:36] ::1:60078 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:45:36] ::1:60078 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:45:36] ::1:60078 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:45:36] ::1:60078 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:45:37] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:45:37] ::1:60078 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:46:50] ::1:60393 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:46:50] ::1:60393 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:46:50] ::1:60393 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:46:50] ::1:60393 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:46:50] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [05-11-2023 15:46:50] ::1:60393 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[31mERROR[0m:    [05-11-2023 15:48:15] Collection hocco does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 310, in get_collection
+    return self._api.get_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 235, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection hocco does not exist.
+[32mINFO[0m:     [05-11-2023 15:48:15] ::1:60841 - "GET /api/v1/collections/hocco?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[31mERROR[0m:    [05-11-2023 15:49:00] Collection hocco does not exist.
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 98, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 93, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/streams/memory.py", line 118, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 67, in catch_exceptions_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 84, in call_next
+    raise app_exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/fastapi/routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/server/fastapi/__init__.py", line 310, in get_collection
+    return self._api.get_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/akshaykn/Documents/Official/PhD/HotelMenu/backend/venv/lib/python3.11/site-packages/chromadb/api/segment.py", line 235, in get_collection
+    raise ValueError(f"Collection {name} does not exist.")
+ValueError: Collection hocco does not exist.
+[32mINFO[0m:     [05-11-2023 15:49:00] ::1:61022 - "GET /api/v1/collections/hocco?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [05-11-2023 15:49:12] ::1:61077 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:49:13] ::1:61077 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [05-11-2023 15:49:13] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [05-11-2023 15:49:13] ::1:61077 - "POST /api/v1/collections/42801c6a-5882-4ae8-a197-7b928ad201eb/add HTTP/1.1" 201
+[32mINFO[0m:     [05-11-2023 15:49:20] ::1:61108 - "GET /api/v1/collections/hocco?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:49:20] ::1:61108 - "POST /api/v1/collections/42801c6a-5882-4ae8-a197-7b928ad201eb/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:49:20] ::1:61108 - "GET /api/v1/collections/42801c6a-5882-4ae8-a197-7b928ad201eb/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:49:20] ::1:61108 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:49:20] Number of requested results 20 is greater than number of elements in index 5, updating n_results = 5
+[32mINFO[0m:     [05-11-2023 15:49:20] ::1:61108 - "POST /api/v1/collections/42801c6a-5882-4ae8-a197-7b928ad201eb/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:50:40] ::1:61421 - "GET /api/v1/collections/moes?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:50:40] ::1:61421 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:50:40] ::1:61421 - "GET /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:50:40] ::1:61421 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:50:40] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:50:40] ::1:61421 - "POST /api/v1/collections/9c312ed5-32a8-493a-b167-cc1230c5ca3b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:52:24] ::1:61861 - "GET /api/v1/collections/pfchangs?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [05-11-2023 15:52:24] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [05-11-2023 15:52:24] ::1:61861 - "POST /api/v1/collections/ae6fcf00-8b90-4483-8cd6-fd99ba974dd3/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:52:24] ::1:61861 - "GET /api/v1/collections/ae6fcf00-8b90-4483-8cd6-fd99ba974dd3/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:52:24] ::1:61861 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:52:24] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:52:24] ::1:61861 - "POST /api/v1/collections/ae6fcf00-8b90-4483-8cd6-fd99ba974dd3/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:54:39] ::1:62410 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:54:39] ::1:62410 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:54:40] ::1:62410 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:54:40] ::1:62410 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:54:40] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:54:40] ::1:62410 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:58:44] ::1:62627 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:58:44] ::1:62627 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:58:44] ::1:62627 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:58:44] ::1:62627 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:58:45] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:58:45] ::1:62627 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:59:34] ::1:62646 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:59:34] ::1:62646 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:59:34] ::1:62646 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 15:59:34] ::1:62646 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 15:59:34] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 15:59:34] ::1:62646 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:05:53] ::1:62774 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:05:53] ::1:62774 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:05:53] ::1:62774 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:05:53] ::1:62774 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 16:05:54] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 16:05:54] ::1:62774 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:06:58] ::1:62797 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:06:58] ::1:62797 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:06:58] ::1:62797 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:06:58] ::1:62797 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 16:06:58] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 16:06:58] ::1:62797 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:26:36] ::1:49315 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:26:36] ::1:49315 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:26:37] ::1:49315 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:26:37] ::1:49315 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 16:26:37] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 16:26:37] ::1:49315 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:59:11] ::1:50005 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:59:11] ::1:50005 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:59:11] ::1:50005 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 16:59:11] ::1:50005 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 16:59:12] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 16:59:12] ::1:50005 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:01:46] ::1:50091 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:01:46] ::1:50091 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:01:46] ::1:50091 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:01:46] ::1:50091 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 17:01:46] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 17:01:46] ::1:50091 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:02:43] ::1:50368 - "GET /api/v1/collections/sushima?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:02:43] ::1:50368 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:02:43] ::1:50368 - "GET /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:02:43] ::1:50368 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 17:02:44] Number of requested results 20 is greater than number of elements in index 6, updating n_results = 6
+[32mINFO[0m:     [05-11-2023 17:02:44] ::1:50368 - "POST /api/v1/collections/33d45396-fdc3-45a1-b81e-3c225f3de43d/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:03:54] ::1:50615 - "GET /api/v1/collections/degg?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:03:54] ::1:50615 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/get HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:03:54] ::1:50615 - "GET /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/count HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 17:03:54] ::1:50615 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[33mWARNING[0m:  [05-11-2023 17:03:55] Number of requested results 20 is greater than number of elements in index 7, updating n_results = 7
+[32mINFO[0m:     [05-11-2023 17:03:55] ::1:50615 - "POST /api/v1/collections/dda780dd-e347-4b96-b289-cd44d4ae210b/query HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 22:42:40] ::1:52441 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 22:42:40] ::1:52441 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [05-11-2023 22:42:40] ::1:52441 - "GET /api/v1 HTTP/1.1" 200

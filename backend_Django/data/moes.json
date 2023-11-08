@@ -1,0 +1,263 @@
+{
+   "hotelName": "moes",
+   "sections": [
+      {
+         "id": "869C327F-F5C7-45A0-9C95-71D9F8203B15",
+         "category": "Meal Kits",
+         "items": [
+            {
+               "id": "F4CCD65E-6F0A-4B1A-86B8-344C89A9FDF9",
+               "name": "Taco Kit",
+               "price": "$8.99",
+               "description": "Make your own tacos at home with this comprehensive kit.",
+               "ingredients": [
+                  "Taco shells",
+                  "Ground beef",
+                  "Lettuce",
+                  "Cheese",
+                  "Salsa",
+                  "Sour cream"
+               ],
+               "calories": 350
+            },
+            {
+               "id": "66FCC605-71E7-44AB-806D-C7D03F9E181E",
+               "name": "Nacho Kit",
+               "price": "$9.99",
+               "description": "Everything you need to build your perfect plate of nachos.",
+               "ingredients": [
+                  "Tortilla chips",
+                  "Refried beans",
+                  "Cheese",
+                  "Sour cream",
+                  "Jalapenos",
+                  "Salsa"
+               ],
+               "calories": 420
+            },
+            {
+               "id": "E8A2AC3D-23A4-4AD3-AF58-2D7B3D37AA84",
+               "name": "Fajita Kit",
+               "price": "$7.99",
+               "description": "All the fixings for sizzling fajitas, served just the way you like them.",
+               "ingredients": [
+                  "Chicken strips",
+                  "Bell peppers",
+                  "Onions",
+                  "Tortillas",
+                  "Guacamole"
+               ],
+               "calories": 280
+            }
+         ]
+      },
+      {
+         "id": "67A8A405-7D58-4F80-95B0-1D15B89BACD0",
+         "category": "Burritos",
+         "items": [
+            {
+               "id": "9D9FA05C-3F2D-4F9B-93E7-4F7D619B2E3D",
+               "name": "Homewrecker",
+               "price": "$12.99",
+               "description": "A massive burrito packed with your choice of ingredients.",
+               "ingredients": [
+                  "Rice",
+                  "Black beans",
+                  "Choice of protein",
+                  "Lettuce",
+                  "Pico de gallo",
+                  "Guacamole"
+               ],
+               "calories": 800
+            },
+            {
+               "id": "26055D3A-34A2-4B42-A8FF-1EDE15ECA5B8",
+               "name": "Build your own Burrito",
+               "price": "$14.99",
+               "description": "Customize your burrito with a range of fresh ingredients.",
+               "ingredients": [
+                  "Flour tortilla",
+                  "Protein",
+                  "Salsa",
+                  "Cheese",
+                  "Sour cream"
+               ],
+               "calories": 700
+            }
+         ]
+      },
+      {
+         "id": "7CC19A69-CFE8-4DEA-BD0F-52850E1E4A46",
+         "category": "Sides",
+         "items": [
+            {
+               "id": "4BC96256-56B3-4264-ACF8-CDB4A2D4D8B5",
+               "name": "Handcrafted Guac",
+               "price": "$3.99",
+               "description": "Freshly made guacamole prepared with ripe avocados and zesty seasoning.",
+               "ingredients": [
+                  "Avocado",
+                  "Lime",
+                  "Onion",
+                  "Tomato",
+                  "Salt",
+                  "Spices"
+               ],
+               "calories": 300
+            },
+            {
+               "id": "AE10D798-1AF4-477D-BDB1-CFA0F3635E29",
+               "name": "Moe's Famous Queso",
+               "price": "$2.99",
+               "description": "Creamy queso dip served warm with tortilla chips.",
+               "ingredients": [
+                  "Cheese",
+                  "Milk",
+                  "Tomato",
+                  "Chili",
+                  "Spices"
+               ],
+               "calories": 200
+            }
+         ]
+      },
+      {
+         "id": "6C840309-B3F9-4410-AE09-2EDD1A004FF6",
+         "category": "Salsas",
+         "items": [
+            {
+               "id": "6E5677B4-078E-4900-99ED-1AEDDFC9B96A",
+               "name": "Kaiser",
+               "price": "$5.99",
+               "description": "A spicy and flavorful salsa made with fresh tomatoes and hot peppers.",
+               "ingredients": [
+                  "Tomatoes",
+                  "Peppers",
+                  "Onions",
+                  "Cilantro",
+                  "Lime",
+                  "Spices"
+               ],
+               "calories": 500
+            },
+            {
+               "id": "27F77599-CFE7-41BC-8935-6C3FA95F58B0",
+               "name": "Tomatillo",
+               "price": "$4.99",
+               "description": "A tangy and zesty salsa made with roasted tomatillos and green chilies.",
+               "ingredients": [
+                  "Tomatillos",
+                  "Chilies",
+                  "Onions",
+                  "Cilantro",
+                  "Lime",
+                  "Spices"
+               ],
+               "calories": 400
+            },
+            {
+               "id": "A4C6F986-4296-49A3-9C79-497B53E854AC",
+               "name": "El Guapo",
+               "price": "$6.99",
+               "description": "A smoky and spicy salsa with chipotle peppers and fire-roasted tomatoes.",
+               "ingredients": [
+                  "Tomatoes",
+                  "Chipotle peppers",
+                  "Onions",
+                  "Garlic",
+                  "Spices"
+               ],
+               "calories": 450
+            }
+         ]
+      },
+      {
+         "id": "EC6B0515-24A1-452F-92B4-F5862BC4ABFC",
+         "category": "Beverages",
+         "items": [
+            {
+               "id": "A17AA2B4-0FC4-4E00-B526-883C0788DFEF",
+               "name": "Moe-Rita",
+               "price": "$3",
+               "description": "Moe's take on a classic margarita with a special twist.",
+               "ingredients": [
+                  "Tequila",
+                  "Triple sec",
+                  "Lime juice",
+                  "Agave nectar",
+                  "Ice"
+               ],
+               "calories": 10
+            },
+            {
+               "id": "28DC75A1-3EF4-4342-8101-6CECB907A01C",
+               "name": "Coke Freestyle",
+               "price": "$2.99",
+               "description": "Coca-Cola served through a machine offering various flavor options.",
+               "ingredients": [
+                  "Coca-Cola",
+                  "Choice of flavor"
+               ],
+               "calories": 150
+            },
+            {
+               "id": "E57F8BBE-C2C4-4184-ABD1-5BB0C425C0EA",
+               "name": "Sweet & Unsweet Tea",
+               "price": "$4",
+               "description": "Classic sweetened or unsweetened iced tea.",
+               "ingredients": [
+                  "Tea",
+                  "Sugar (for sweet tea)"
+               ],
+               "calories": 50
+            }
+         ]
+      },
+      {
+         "id": "BBB157B9-F2D1-4702-8326-3D0E7EE0F98E",
+         "category": "Kids' Menu",
+         "items": [
+            {
+               "id": "AC4EB03A-4909-4A31-B03E-50674794F23E",
+               "name": "Moo Moo Mr. Cow",
+               "price": "$5.99",
+               "description": "Mini beef burrito with a side of rice and beans.",
+               "ingredients": [
+                  "Tortilla",
+                  "Beef",
+                  "Rice",
+                  "Beans",
+                  "Cheese"
+               ],
+               "calories": 350
+            },
+            {
+               "id": "E43A00DF-2398-4C1D-8E18-3C350A67D42C",
+               "name": "Mini Masterpiece",
+               "price": "$5.99",
+               "description": "Chicken and cheese quesadilla served with fries.",
+               "ingredients": [
+                  "Chicken",
+                  "Cheese",
+                  "Tortilla",
+                  "Potatoes"
+               ],
+               "calories": 800
+            },
+            {
+               "id": "B8AA63BC-7095-497B-9E63-2F9AC3A1F005",
+               "name": "Power Wagon",
+               "price": "$3.99",
+               "description": "A small serving of chicken, cheese, and lettuce wrapped in a tortilla.",
+               "ingredients": [
+                  "Chicken",
+                  "Cheese",
+                  "Lettuce",
+                  "Tortilla"
+               ],
+               "calories": 150
+            }
+         ]
+      }
+   ]
+}

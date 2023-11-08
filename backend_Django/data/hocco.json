@@ -1,0 +1,211 @@
+{
+   "hotelName": "hocco",
+   "sections": [
+      {
+         "id": "137C46C8-94B6-41C8-88A5-63F63F8C3EEA",
+         "category": "Appetizers",
+         "items": [
+            {
+               "id": "21B68C4E-E6A7-4AC2-AE36-E4B1560D9A56",
+               "name": "Tandoori Lamb Chops",
+               "price": "$25",
+               "description": "Juicy lamb chops marinated in a blend of Indian spices and cooked in a traditional tandoor.",
+               "ingredients": [
+                  "Lamb chops",
+                  "Yogurt",
+                  "Ginger-garlic paste",
+                  "Spices"
+               ],
+               "calories": 350
+            },
+            {
+               "id": "C3C19E24-ABD8-4A65-8FAB-69A2C8AD5227",
+               "name": "Lamb Galouti",
+               "price": "$17",
+               "description": "Melt-in-the-mouth kebabs made with minced lamb and a secret mix of spices.",
+               "ingredients": [
+                  "Minced lamb",
+                  "Papaya paste",
+                  "Spices"
+               ],
+               "calories": 400
+            },
+            {
+               "id": "722D61B3-EC98-4786-89FF-816C615893E4",
+               "name": "Shrimp Amritsari",
+               "price": "$17",
+               "description": "Crispy fried shrimp marinated in a spiced chickpea batter, a traditional Punjabi delicacy.",
+               "ingredients": [
+                  "Shrimp",
+                  "Chickpea flour",
+                  "Spices"
+               ],
+               "calories": 290
+            }
+         ]
+      },
+      {
+         "id": "9BFA1ED4-153B-4BFC-9A34-8257F2998E64",
+         "category": "Entrees",
+         "items": [
+            {
+               "id": "1BFD547A-7B7D-4B71-9A41-4326E40A8AB4",
+               "name": "Tikka Masala",
+               "price": "$16",
+               "description": "A creamy tomato-based curry with marinated chicken cooked to perfection.",
+               "ingredients": [
+                  "Chicken",
+                  "Tomato",
+                  "Cream",
+                  "Spices"
+               ],
+               "calories": 700
+            },
+            {
+               "id": "0E4C7AD7-BCEA-47C1-B79E-00ECF2E60A4E",
+               "name": "Karahi",
+               "price": "$15",
+               "description": "A spicy and aromatic curry cooked in a traditional Indian karahi.",
+               "ingredients": [
+                  "Choice of protein",
+                  "Onion",
+                  "Tomato",
+                  "Capsicum",
+                  "Spices"
+               ],
+               "calories": 500
+            },
+            {
+               "id": "6326947C-4D40-432F-B99E-71C116B63FF1",
+               "name": "Chettinad",
+               "price": "$18",
+               "description": "A South Indian curry known for its fiery and robust flavors.",
+               "ingredients": [
+                  "Choice of protein",
+                  "Coconut",
+                  "Black pepper",
+                  "Fennel",
+                  "Spices"
+               ],
+               "calories": 550
+            }
+         ]
+      },
+      {
+         "id": "7DD1A5E3-C7D8-4978-BA6A-3F43EF0A8A6F",
+         "category": "Sides",
+         "items": [
+            {
+               "id": "B0F00B39-14B6-4B74-A6DC-61698F9F17AA",
+               "name": "Tandoori Roti",
+               "price": "$3",
+               "description": "Whole wheat bread cooked in a tandoor, a perfect complement to Indian curries.",
+               "ingredients": [
+                  "Whole wheat flour",
+                  "Water"
+               ],
+               "calories": 70
+            },
+            {
+               "id": "E2678FAB-5D3B-4713-A91C-401BA757EF5F",
+               "name": "Naan",
+               "price": "$4",
+               "description": "Leavened bread made from refined flour and baked in a tandoor.",
+               "ingredients": [
+                  "Refined flour",
+                  "Yogurt",
+                  "Yeast"
+               ],
+               "calories": 80
+            }
+         ]
+      },
+      {
+         "id": "BDB32B1D-EAB9-4782-8494-5C4293A1826E",
+         "category": "Desserts",
+         "items": [
+            {
+               "id": "24C21B25-165C-4F25-B5E3-2D12632C4458",
+               "name": "Gulab Jamun",
+               "price": "$5",
+               "description": "Deep-fried dumplings made of milk solids, soaked in sugar syrup.",
+               "ingredients": [
+                  "Milk solids",
+                  "Flour",
+                  "Sugar",
+                  "Cardamom"
+               ],
+               "calories": 500
+            },
+            {
+               "id": "67870DC9-98CD-4D2E-88E5-97912CB94B48",
+               "name": "Moong Dal Halwa",
+               "price": "$5",
+               "description": "Sweet pudding made from moong dal (split mung beans), ghee, and sugar.",
+               "ingredients": [
+                  "Moong dal",
+                  "Ghee",
+                  "Sugar",
+                  "Nuts"
+               ],
+               "calories": 300
+            },
+            {
+               "id": "1953A98A-2CC8-4996-A5F9-2E8BC0706BE4",
+               "name": "Gajar Halwa",
+               "price": "$5",
+               "description": "A classic Indian dessert made from grated carrots, milk, and sugar.",
+               "ingredients": [
+                  "Carrots",
+                  "Milk",
+                  "Sugar",
+                  "Ghee"
+               ],
+               "calories": 500
+            }
+         ]
+      },
+      {
+         "id": "73DC7A81-7258-4A0A-8A9F-7E094EE21D14",
+         "category": "Beverages",
+         "items": [
+            {
+               "id": "A6A15A1E-2B58-42BD-82A4-C6E79DF9D9D5",
+               "name": "Mango Lassi",
+               "price": "$4",
+               "description": "A refreshing yogurt-based drink blended with mango pulp and a hint of cardamom.",
+               "ingredients": [
+                  "Yogurt",
+                  "Mango pulp",
+                  "Cardamom"
+               ],
+               "calories": 50
+            },
+            {
+               "id": "AD0D9C6F-8F49-422A-B79E-3F50A00A7021",
+               "name": "Chaas",
+               "price": "$3",
+               "description": "A traditional Indian savory buttermilk spiced with roasted cumin.",
+               "ingredients": [
+                  "Buttermilk",
+                  "Roasted cumin",
+                  "Salt"
+               ],
+               "calories": 150
+            },
+            {
+               "id": "8D03D006-1CFA-4CF2-81F4-85EBE58E88B5",
+               "name": "Jeera Pop",
+               "price": "$3",
+               "description": "A cooling and fizzy cumin-flavored beverage.",
+               "ingredients": [
+                  "Soda",
+                  "Cumin",
+                  "Salt"
+               ],
+               "calories": 50
+            }
+         ]
+      }
+   ]
+}
