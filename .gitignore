@@ -1,3 +1,4 @@
-/frontend_React/node_modules
-/backend_Django/venv
-/backend_Django/hmbackend/.env
+/frontend/node_modules
+/frontend/.env
+/backend/venv
+/backend/hmbackend/.env
