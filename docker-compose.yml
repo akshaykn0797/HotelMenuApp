@@ -29,7 +29,7 @@ services:
       - '3000:3000'
 
     volumes:
-      - ./frontend:/app/frontend
+      - frontend:/app/frontend
 
     depends_on:
       - backend
@@ -45,7 +45,7 @@ services:
       - '8080:8080'
 
     volumes:
-      - ./backend:/app/backend
+      - backend:/app/backend
 
     depends_on:
       - chroma
@@ -54,9 +54,10 @@ services:
 
 volumes:
   index_data:
-    driver: local
   backups:
-    driver: local
+  backend:
+  frontend:
+
 
 networks:
   net:
