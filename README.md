@@ -1,4 +1,4 @@
-# AccessMenu: AI-Powered Accessible Restaurant Menu System
+# AccessMenu: Enhancing Usability of Online Restaurant Menus for Screen Reader Users
 
 An intelligent restaurant menu system that enhances accessibility for screen reader users through natural language querying. Built with Django, React, LangChain, and OpenAI's GPT-4o-mini, AccessMenu enables users to interact with restaurant menus using conversational queries instead of traditional visual browsing.
 
