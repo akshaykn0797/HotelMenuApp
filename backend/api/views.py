@@ -145,7 +145,7 @@ def filterData(request, *args, **kwrgs):
     hotelCollection = client.get_collection(name=hotel)
     llm = ChatOpenAI(
         openai_api_key=settings.OPENAI_API_KEY,
-        model_name='gpt-3.5-turbo',
+        model_name='gpt-4o-mini',
         temperature=0.0
     )
     print("Items on Collection ", hotelCollection.peek())
@@ -162,21 +162,85 @@ def filterData(request, *args, **kwrgs):
         retriever=db.as_retriever(search_type="mmr")
     )
     prompt = """
-        Return the answer in JSON format in the following structure :
+        You are an intelligent assistant helping users query restaurant menu information. Your task is to analyze the user's query
+        and provide accurate responses based solely on the menu data provided in the context.
+
+        REASONING STEPS:
+        1. Understand the user's query and identify key requirements (e.g., dietary restrictions, price constraints, meal type)
+        2. Search through the menu model to find items that match ALL specified criteria
+        3. For filtering queries: Return all items matching the specified filters
+        4. For factual queries: Extract specific information about mentioned items
+        5. For suggestive queries: Recommend items based on stated preferences
+        6. For arithmetic queries: Calculate totals and verify they meet price constraints
+        7. For invalid/unrelated queries: Respond that the question is not related to the menu content
+
+        EXAMPLES:
+
+        Example 1 - Simple Filtering:
+        Query: "List all vegetarian items"
+        Reasoning: Search for items marked as vegetarian in the menu
+        Response: { "items": [...] }
+
+        Example 2 - Single-hop Reasoning:
+        Query: "What are the desserts under $10?"
+        Reasoning: Filter items in dessert category AND price < $10
+        Response: { "items": [...] }
+
+        Example 3 - Multi-hop Reasoning:
+        Query: "What are the gluten-free appetizers with a drink under $20?"
+        Reasoning: Filter appetizers that are gluten-free AND find drinks, then verify total < $20
+        Response: { "items": [...] }
+
+        Example 4 - Logical and Arithmetic:
+        Query: "Find me a combination of a main dish and a dessert for less than $30, with the main dish being vegetarian"
+        Reasoning: Find vegetarian main dishes, find desserts, calculate combinations where sum < $30
+        Response: { "items": [...] }
+
+        Example 5 - Suggestive:
+        Query: "What's a good vegan meal with a drink for under $25?"
+        Reasoning: Recommend vegan main course + drink where total < $25
+        Response: { "items": [...] }
+
+        Example 6 - Negative Query:
+        Query: "Why is this restaurant so expensive?"
+        Reasoning: Query is not about specific menu items or filtering
+        Response: { "message": "I can only answer questions about menu items, prices, ingredients, and dietary information. Please ask about specific dishes or menu categories." }
+
+        IMPORTANT RULES:
+        - Base all responses STRICTLY on the provided menu model context
+        - Do NOT hallucinate or invent information not present in the menu
+        - For items far apart in the menu, carefully verify their relationships
+        - For ambiguous queries, interpret based on most common meaning (e.g., "healthy" = low calorie or vegetarian)
+        - Always return responses in valid JSON format
+
+        OUTPUT FORMAT:
+        For filtering/list queries, return:
         {
-        items [
+            "items": [
                 {
-            "id": "",
-            "name": "",
-            "price": "",
-            "description": "",
-            "ingredients": [],
-            "calories": 
+                    "id": "",
+                    "name": "",
+                    "price": "",
+                    "description": "",
+                    "ingredients": [],
+                    "calories": 0
+                }
+            ]
         }
-        ]
+
+        For factual queries (e.g., "What is the price of omelette?"), return:
+        {
+            "message": "The omelette costs $X.XX"
         }
+
+        For invalid/unrelated queries, return:
+        {
+            "message": "I can only answer questions about menu items. Please ask about specific dishes or menu categories."
+        }
+
+        Now process the following query based on the menu context provided:
         """
-    result = qa.run(query + prompt)
+    result = qa.run(prompt + "\n\nUser Query: " + query)
     return Response(json.loads(result))
 
 
